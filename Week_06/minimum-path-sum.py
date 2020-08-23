@@ -10,3 +10,12 @@ class Solution:
                 elif n == 0: grid[m][n] = grid[m-1][n] + grid[m][n]
                 else: grid[m][n] = min(grid[m-1][n], grid[m][n-1]) + grid[m][n]
         return grid[-1][-1]
+# class Solution:
+#     def minPathSum(self, grid: [[int]]) -> int:
+#         for m in range(len(grid)):
+#             for n in range(len(grid[0])):
+#                 if m == n == 0: continue
+#                 elif m == 0: grid[m][n] = grid[m][n-1] + grid[m][n]
+#                 elif n == 0: grid[m][n] = grid[m-1][n] + grid[m][n]
+#                 else: grid[m][n] = min(grid[m-1][n], grid[m][n-1]) + grid[m][n]
+#         return grid[-1][-1]
