@@ -4,7 +4,7 @@ class Solution:
         N2 = len(t)
         if N1 < N2:
             return 0
-        count = collections.defalutdict(list)
+        count = collections.defaultdict(list)
         for i, c in enumerate(t):
             count[c].append(i)
         status = [1] + [0] * N2
